@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>音乐鉴赏</title>
+        <link rel="stylesheet" href="../web/style.css"> 
+        <style>
+            body{
+                background-color: rgb(255, 243, 204);
+            }
+            .main {
+                width: 100%;
+                height: auto;
+                display: flex;
+                padding:20px 1%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .main .music {
+                width: 100%;
+                height: 230px;
+                display: flex;
+                margin-bottom: 10px;
+                justify-content: space-around;
+                background-color: rgb(0, 0, 0);
+            }
+            .main .music img{
+                width: 25%;
+                height: 100%;
+                object-fit: cover;
+                border-style:ridge;
+                border-color: rgb(255, 255, 255);
+                border-width: 5px;
+            }
+            .main .music .msgs{
+                width: 75%;
+                height: 100%;
+                background-color:  rgb(240, 205, 33);
+            }
+            .main .music .msgs .msg{
+                width:500px;
+                height: 50px;
+                background-color:  rgb(52, 38, 5);
+                text-align: center;
+                font-size: 25px;
+                color: white;
+                line-height: 50px;
+                margin-bottom: 20px;
+                margin-left: 3%;
+            }
+            .main .music .msgs p{
+                width: 90%;
+                margin-left: 5%;
+                font-size: 20px;
+            }
+            .music img:hover{
+                transition: transform 0.5s ease;
+                transform: scale(1.5) translateX(15%);
+            }
+        </style>   
+    </head>
+    <body>
+        <img src="../image/Background.jpg" alt="The poster." class="banner" >
+        <div class="nav">
+            <a href="../index.html" class="text-effect">网站首页</a>
+            <a href="../web/characters.html" class="text-effect">角色介绍</a>
+            <a href="../web/plots.html" class="text-effect">剧情概览</a>
+            <a href="../web/music.html" class="active">音乐鉴赏</a>
+            <a href="../web/cast_bscene.html" class="text-effect">卡司&幕后</a>
+        </div>
+        <div class="title">音乐鉴赏</div>
+
+        <div class="main">
+            <div class="music">
+                <img src="../image/m1.jpg" alt="Alexander Hamilton">
+                <div class="msgs">
+                    <div class="msg">Alexander Hamilton</div>
+                    <p class="text-effect">这是音乐剧的开场曲目，由Aaron Burr以饶舌的形式介绍亚历山大·汉密尔顿的身世和背景。这首歌设定了整个音乐剧的基调，揭示了汉密尔顿和伯尔之间错综复杂的关系，以及他们的故事是如何紧密相连的。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m2.jpg" alt="My Shot">
+                <div class="msgs">
+                    <div class="msg">My Shot</div>
+                    <p class="text-effect">这首歌展现了汉密尔顿及其同伴们的抱负和决心。歌曲中，汉密尔顿和他的同伴们表达了他们想要在动荡的时代中留下自己印记的愿望。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m3.jpg" alt="The Schuyler Sisters">
+                <div class="msgs">
+                    <div class="msg">The Schuyler Sisters</div>
+                    <p class="text-effect">这首歌由Angelica、Eliza和Peggy Schuyler演唱，展现出她们的不同性格，同时描绘时代背景，体现了独立战争时期纽约的风貌和革命氛围，表达了女性意识，展现女性对平等权利的追求。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m4.jpg" alt="Helpless">
+                <div class="msgs">
+                    <div class="msg">Helpless</div>
+                    <p class="text-effect">由Eilzabeth演唱，是Eliza与Hamilton的定情曲，生动展现了她对汉密尔顿一见钟情、难以自拔的情感状态 。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m5.jpg" alt="Satisfied">
+                <div class="msgs">
+                    <div class="msg">Satisfied</div>
+                    <p class="text-effect">Angelica Schuyler的歌曲，以一种复杂而深刻的方式展现了她对汉密尔顿的感情和独立聪慧的性格。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m6.jpg" alt="Wait For It">
+                <div class="msgs">
+                    <div class="msg">Wait For It</div>
+                    <p class="text-effect">在《汉密尔顿》中，“Wait for it”意义非凡。它展现了伯尔谨慎、野心勃勃的性格。通过歌曲体现他的处世哲学，与汉密尔顿形成对比，埋下了后面二人冲突的伏笔，让观众深入理解角色的内心世界。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m7.jpg" alt="History Has Its Eyes On You">
+                <div class="msgs">
+                    <div class="msg">History Has Its Eyes On You</div>
+                    <p class="text-effect">该曲犹如警钟，时刻提醒剧中角色，其一举一动都处于历史的注视之下，展现了个体在宏大历史进程中的责任与使命，让角色们意识到他们的抉择与作为，无论是英勇无畏还是有所亏欠，都将被历史铭记与评判，升华了整部剧的主题内涵。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m8.jpg" alt="The Room Where It Happens">
+                <div class="msgs">
+                    <div class="msg">The Room Where It Happens</div>
+                    <p class="text-effect">在《汉密尔顿》中，“The Room Where It Happens”展现了权力博弈。汉密尔顿意识到闭门会议中的决策影响深远。歌曲体现了政治的复杂，凸显角色对权力的渴望，也推动剧情走向更激烈的政治斗争。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m9.jpg" alt="Non-Stop">
+                <div class="msgs">
+                    <div class="msg">Non-Stop</div>
+                    <p class="text-effect">“Non - stop”展现了汉密尔顿的野心和冲劲，由一句“Why do you write like you're running out of time?”被当代中国音乐剧迷戏称为“卷王之歌”。歌曲串联起诸多情节，体现他不断进取的精神，同时暗示故事发展。</p>
+                </div>
+            </div>
+            <div class="music">
+                <img src="../image/m10.jpg" alt="Who Lives,Who Dies,Who Tells Your Story">
+                <div class="msgs">
+                    <div class="msg">Who Lives,Who Dies,Who Tells Your Story</div>
+                    <p class="text-effect">这音乐剧《汉密尔顿》的结尾曲，由Eliza Hamilton和其他角色演唱。这首歌探讨了历史和遗产是如何被塑造的，强调了叙述者在历史记忆中的重要性。Eliza反思了汉密尔顿的一生和成就，以及她自己对历史的贡献。歌曲以一个深刻的问题结束，提醒观众思考谁将决定我们的故事如何被讲述和记住。</p>
+                </div>
+            </div>
+        
+        
+
+        </div>
+
+
+        <div class="footer">
+            Hamierton汉密尔顿@ Disney-2024
+        </div>
+        </body>
+    </html>
+        
+    </body>
+</html>

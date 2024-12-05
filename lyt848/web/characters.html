@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>角色介绍</title>
+        <link rel="stylesheet" href="../web/style.css" />  
+        <style> 
+        .main {
+            width: 100%;
+            height: 1700px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        body{
+                background-color: rgb(255, 243, 204);
+            }
+
+        .shell {
+            position: relative;
+            min-width: 1000px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* 设置3d变化 */
+            transform-style: preserve-3d;
+            /* 添加透视效果 */
+            perspective: 900px;
+           
+        }
+
+        .shell .box {
+            position: relative;
+            width: 250px;
+            height:500px;
+            transition: 0.3s;
+            overflow: hidden;
+            margin: 30px;
+            transform: rotateY(0deg);
+            transition-delay: .1s;
+            border-radius: 5px;
+            border: #ffffff 5px solid;
+        }
+
+        .shell:hover .box {
+            transform: rotateY(20deg);
+        }
+
+       
+        .shell .box:hover {
+            transform: rotateY(0deg) scale(1.25);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .shell .box:hover~.box {
+            transform: rotateY(-20deg);
+        }
+
+        .shell .box .images img {
+           width:270px;
+           height: 600px;
+           object-fit: cover;
+        }
+
+        .shell .box .content {
+            position: absolute;
+            top: 0;
+            width: 90%;
+            height: 100%;
+            z-index: 999;
+            padding: 15px;
+        }
+
+        .shell .box .content h2 {
+            color: rgb(255, 255, 255);
+            transition: 0.3s;
+            font-size: 20px;
+            transform: translateY(-100px);
+        }
+
+        .shell .box:hover .content h2 {
+            transform: translateY(-15px);
+        }
+
+        .shell .box .content p {
+            color: rgb(0, 0, 0);
+            transition: 0.3s;
+            font-size: 14px;
+            transform: translateY(600px);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .shell .box:hover .content p {
+            transform: translateY(300px);
+        }
+        .shell .box .content p {
+            color: rgb(0, 0, 0);
+            transition: 0.3s;
+            font-size: 14px;
+            transform: translateY(600px);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .shell .others p{
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.868);
+            width: 80%;
+            margin-left: 10%;
+            text-align: center;
+        }
+        .shell .others ul{
+            color: rgb(255, 255, 255);
+            font-size: 23px;
+            background-color: rgba(54, 27, 0);
+            width: 300px;
+            width: 80%;
+            margin-left: 10%;
+            text-align: center;
+        }
+
+    </style>
+    </head>
+    <body>
+        <img src="../image/Background.jpg" alt="The poster." class="banner" >
+        <div class="nav">
+            <a href="../index.html" class="text-effect">网站首页</a>
+            <a href="../web/characters.html" class="active">角色介绍</a>
+            <a href="../web/plots.html" class="text-effect">剧情概览</a>
+            <a href="../web/music.html" class="text-effect">音乐鉴赏</a>
+            <a href="../web/cast_bscene.html" class="text-effect">卡司&幕后</a>
+        </div>
+        <div class="title">主要角色介绍</div>
+    <div class="main">
+        <div class="shell">
+            <div class="box">
+                <div class="images">
+                    <img src="../image/aglc.jpg">
+                </div>
+                <div class="content">
+                    <h2>Angelica Schuyler</h2>
+                    <p> 安洁莉卡·斯凯勒：伊丽莎白的姐姐，斯凯勒家族中最年长的女儿。她被认为是音乐剧中“最聪明”的角色，尽管她爱上了汉密尔顿，但对妹妹的爱让她选择放弃。她的智慧和独立性使她在剧中占有重要地位。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/ab.jpg">
+                </div>
+                <div class="content">
+                    <h2>Aaron Burr</h2>
+                    <p>亚伦·伯尔：汉密尔顿的对手和叙述者，与汉密尔顿有着复杂的关系。伯尔在剧中被描绘为一个谨慎、保守的人物，与汉密尔顿的直接和热情形成对比。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/Ha.jpg">
+                </div>
+                <div class="content">
+                    <h2>Alexander Hamilton</h2>
+                    <p>亚历山大·汉密尔顿：音乐剧的主角，美国开国元勋之一，第一任财政部长。他是一个充满野心、才华横溢的人物，其一生被描绘为既有辉煌成就也有悲剧色彩。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/elz.jpg">
+                </div>
+                <div class="content">
+                    <h2>Eliza Hamilton</h2>
+                    <p>伊丽莎白·汉密尔顿：汉密尔顿的妻子，她在剧中的旅程是关于坚韧、忠诚和情感深度的。她对汉密尔顿的爱和支持是无条件的，尽管她面临了个人挑战和心碎时刻。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/wst.jpg">
+                </div>
+                <div class="content">
+                    <h2>George Washington</h2>
+                    <p>乔治·华盛顿：美国独立战争期间的大陆军总司令，后来成为美国的第一任总统。在音乐剧中，他被描绘为汉密尔顿团队中最年长、最明智的人物。
+                    </p>
+                </div>
+            </div>
+            <div class="others">
+               <div class="title">其他角色</div>
+                <ul class="text">国王乔治三世：</ul>
+                <p>被描绘成一个幼稚、任性的反派角色。他在剧中演唱的《You’ll Be Back》一曲，充分展现了他的专横与傲慢，与其他角色形成了强烈的反差，为剧情增添了别样的色彩。</p>
+                <br>
+                <ul class="text">詹姆斯·麦迪逊：</ul>
+                <p>美国第四任总统，与托马斯·杰斐逊是一伙的，他参与撰写了《联邦党人文集》，在剧中与杰斐逊一同与汉密尔顿展开政治博弈，展现出不同的政治理念和主张。</p>
+                <br><ul  class="text">菲利普·汉密尔顿：</ul>
+                <p>亚历山大·汉密尔顿的长子，他年轻有为、充满活力，对父亲充满敬仰与崇拜。然而，他最终在一场决斗中不幸丧生，这一悲剧对汉密尔顿一家造成了沉重打击，也成为了剧中的一个转折点，加剧了剧情的悲剧色彩。</p>
+                <br><ul class="text">乔治·伊克斯：</ul>
+                  <p>饰演乔治·华盛顿，其表演庄重而有力量，展现出华盛顿的领袖气质和对国家的责任感，同时他的演唱也为角色增添了威严与厚重感。</p>
+                  <br><ul class="text">玛利亚·雷诺兹：</ul>
+                 <p>她与汉密尔顿之间有着复杂的情感纠葛和不为人知的关系，她的出现引发了一系列事件，导致汉密尔顿的婚姻和政治生涯陷入危机，是推动剧情发展的重要人物之一。</p>
+                 <br><ul  class="text">拉法耶特侯爵:</ul>
+                 <p>法国贵族，在美国独立战争中担任法国志愿军的将领，与汉密尔顿结识并成为好友，在战争中发挥了重要作用，展现了国际力量对美国独立战争的支持。</p>
+                 <br><ul class="text">约翰·劳伦斯:</ul>
+                 <p>他是汉密尔顿的挚友之一，同样积极投身于美国独立战争，与汉密尔顿有着共同的理想和抱负，但最终在战争中不幸牺牲，他的离去对汉密尔顿产生了深远影响。</p>
+            </div>   
+               
+         </div>
+    </div>
+
+
+
+    <div class="footer">
+        Hamierton汉密尔顿@ Disney-2024
+    </div>
+    </body>
+</html>
